@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_Listavendedor"
+        android:icon="@drawable/vendedor"
+        android:title="Lista Vendedores" />
+    <item
+        android:id="@+id/nav_TomarFoto"
+        android:icon="@drawable/camara"
+        android:title="Tomar Fotografia" />
+    <item
+        android:id="@+id/nav_VendedorGrafico"
+        android:icon="@drawable/grafico"
+        android:title="Ventas Vendedores" />
+</menu>
