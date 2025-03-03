@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido!"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+    android:layout_marginBottom="16dp"/>
+
+    <ListView
+        android:id="@+id/lvHolidays"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvWelcome"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:contentDescription="Cerrar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:elevation="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp" />
+
+</RelativeLayout>
