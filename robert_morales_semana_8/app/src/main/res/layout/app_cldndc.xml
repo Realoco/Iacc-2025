@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Robert_morales_semana_8.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Robert_morales_semana_8.AppWidgetContainer">
+    <TextView
+        android:id="@+id/appwidget_text"
+        style="@style/Widget.Robert_morales_semana_8.AppWidget.InnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/appwidget_text"
+        android:text="Calculadora Decimal / Binario"
+        android:textSize="20sp"
+    android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/appwidget_instruction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appwidget_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Selecciona una operación"
+        android:textSize="16sp"
+    android:textStyle="normal" />
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appwidget_instruction_text"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/btn_sumar_decimal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+            android:text="Sumar Decimal"
+            android:layout_marginEnd="16dp" />
+            <Button
+                android:id="@+id/btn_restar_decimal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Restar Decimal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp">
+            <Button
+                android:id="@+id/btn_sumar_binario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sumar Binario"
+                android:layout_marginEnd="16dp" />
+            <Button
+                android:id="@+id/btn_restar_binario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Restar Binario" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
